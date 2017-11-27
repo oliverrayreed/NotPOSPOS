@@ -13,6 +13,9 @@ private:
 public:
   registerController(StoreInventory *, order *);
   void processOrder();
+  
+  //update item
+  virtual void update() = 0;
 };
 
 #endif
