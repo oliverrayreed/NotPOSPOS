@@ -4,7 +4,7 @@
 #include "StoreInventory.h"
 #include "order.h"
 
-class registerController
+class registerController:public IObserver
 {
 private:
   StoreInventory *database;
@@ -15,7 +15,7 @@ public:
   void processOrder();
   
   //update item
-  virtual void update() = 0;
+  void update();
 };
 
 #endif
