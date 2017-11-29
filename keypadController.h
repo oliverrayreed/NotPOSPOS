@@ -3,7 +3,7 @@
 #include "order.h"
 #include "customerView.h"
 
-class keypadController
+class keypadController:public IObserver
 {
 private:
   order *cart;
@@ -12,7 +12,7 @@ public:
   keypadController(order *);
   
   //update item
-  virtual void update();
+  void update();
 };
 
 #endif
