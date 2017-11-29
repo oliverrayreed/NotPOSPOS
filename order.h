@@ -2,7 +2,7 @@
 #define ORDER_H
 #include "IOrder.h"
 
-class order : public IOrder
+class order : public IOrder : public IObserver
 {
   private:
     std::vector<item> itemList;
